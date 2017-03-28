@@ -1,8 +1,7 @@
-name := "Example Scala Travis"
-
+name := "example-sbt-travis"
 version := "0.1"
-
 scalaVersion := "2.10.6"
+
 
 libraryDependencies ++= Seq(
   "com.google.code.findbugs" % "jsr305" % "3.0.1",
@@ -19,3 +18,8 @@ libraryDependencies ++= Seq(
   "commons-beanutils" % "commons-beanutils" % "1.9.0",
   "commons-fileupload" % "commons-fileupload" % "1.2.1"
 )
+
+// Black Duck Plugin Settings
+hubUrl := "hello"
+hubUsername := "user"
+hubPassword := "password"
