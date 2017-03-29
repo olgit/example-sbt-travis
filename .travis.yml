@@ -1,8 +1,8 @@
 language: scala
 
 scala:
-  - 2.10.6
+- 2.10.6
 
 after_success:
-  - sbt "set deployHubBdio := false" buildBom
-  - bash <(curl -s https://copilot.blackducksoftware.com/bash/travis) ./target/blackduck/*_bdio.jsonld
+- sbt "set deployHubBdio := false" buildBom
+- bash <(curl -s https://copilot.blackducksoftware.com/bash/travis) ./target/blackduck/*_bdio.jsonld

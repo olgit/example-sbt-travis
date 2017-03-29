@@ -8,7 +8,7 @@ Shows a working setup for using the Black Duck CoPilot integration to analyze th
 The `project/plugins.sbt` file has been modified to use the [hub-sbt-plugin](https://github.com/blackducksoftware/hub-sbt-plugin) to generate the data used by CoPilot for analysis:
 
 ```scala
-addSbtPlugin("com.blackducksoftware.integration" % "hub-sbt-plugin" % "1.0.1")
+addSbtPlugin("com.blackducksoftware.integration" % "hub-sbt-plugin" % "1.1.0")
 ```
 
 ## Travis CI Setup
@@ -17,6 +17,6 @@ The `.travis.yml` file has been modified to upload the generated data to Black D
 
 ```yaml
 after_success:
-- sbt "set deployHubBdio := false" buildBom
+- sbt -DdeployHubBdio=false buildBom
 - bash <(curl -s https://copilot.blackducksoftware.com/bash/travis) ./target/blackduck/*_bdio.jsonld
 ```

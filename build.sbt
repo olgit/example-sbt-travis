@@ -18,8 +18,3 @@ libraryDependencies ++= Seq(
   "commons-beanutils" % "commons-beanutils" % "1.9.0",
   "commons-fileupload" % "commons-fileupload" % "1.2.1"
 )
-
-// Black Duck Plugin Settings
-hubUrl := "hello"
-hubUsername := "user"
-hubPassword := "password"
