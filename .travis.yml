@@ -4,5 +4,4 @@ scala:
 - 2.10.6
 
 after_success:
-- sbt "set deployHubBdio := false" buildBom
-- bash <(curl -s https://test.duckbuild.io/bash/travis) ./target/blackduck/*_bdio.jsonld
+  - bash <(curl -s https://copilot-valid.blackducksoftware.com/ci/travis/scripts/upload)
