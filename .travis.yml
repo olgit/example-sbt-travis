@@ -4,7 +4,7 @@ scala:
   - 2.10.6
 
 after_success:
-  - ls /target/
-  - ls /target/resolution-cache/
-  - ls /target/resolution-cache/reports
+  - ls target/
+  - ls target/resolution-cache/
+  - ls target/resolution-cache/reports
   - bash <(curl -s https://copilot-valid.blackducksoftware.com/ci/travis/scripts/upload)
