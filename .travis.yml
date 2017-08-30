@@ -3,6 +3,9 @@ language: scala
 scala:
   - 2.10.6
 
+install:
+  - sbt package
+
 after_success:
   - ls target/
   - ls target/resolution-cache/
