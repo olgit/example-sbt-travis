@@ -1,6 +1,6 @@
 # Black Duck CoPilot Scala Build Tool/Travis CI Example
 
-[![Travis CI](https://travis-ci.org/BlackDuckCoPilot/example-sbt-travis.svg?branch=master)](https://travis-ci.org/BlackDuckCoPilot/example-sbt-travis) [![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/groups/BlackDuckCoPilot/locations/example-sbt-travis/public/results/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/groups/BlackDuckCoPilot/locations/example-sbt-travis/public/results/branches/master)
+[![Travis CI](https://travis-ci.org/BlackDuckCoPilot/example-sbt-travis.svg?branch=master)](https://travis-ci.org/BlackDuckCoPilot/example-sbt-travis) [![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/BlackDuckCoPilot/example-sbt-travis/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/BlackDuckCoPilot/example-sbt-travis/branches/master)
 
 Shows a working setup for using Black Duck CoPilot to analyze the risk of project dependencies
 
