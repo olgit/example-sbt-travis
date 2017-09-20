@@ -2,10 +2,12 @@ language: scala
 
 notifications:
   email: false
-  
+
 scala:
-- 2.10.6
+  - 2.10.6
+
+install:
+  - sbt package
 
 after_success:
-- sbt "set deployHubBdio := false" buildBom
-- bash <(curl -s https://copilot.blackducksoftware.com/bash/travis) ./target/blackduck/*_bdio.jsonld
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
